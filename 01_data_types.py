@@ -92,7 +92,7 @@ Then create another version using " - " as the separator.
 Print both the original list and both joined strings.
 """
 print()
-print("Taske 620")
+print("Taske 6")
 #create a list of favorite subjects
 favorite_subjects = ["Math", "English", "Science", "History"]
 #use the join function to combine all subjects into a single string
