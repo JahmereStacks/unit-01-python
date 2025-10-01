@@ -1,4 +1,8 @@
-my_list = []
+with open("todo.txt") as file:
+     my_list = file.readlines()
+print (my_list)
+
+
 count = 0
 #counter for numbered items
 #set list to 0
@@ -45,8 +49,11 @@ while True :
             del my_list[remove_td - 1]
     #if user wants to quit app then say goodbye
     if add_remove_clear== '3':
-            print("GOodbye")
-            break
+        with open("todo.txt", "w") as file:  
+                 file.write(x + '\n')
+                 print (my_list)
+                 print("Saved.... Bye")
+                 break
     
 #if user wants to clear list then set list to empty and reset counter
     if add_remove_clear== '4':
@@ -59,4 +66,5 @@ while True :
         new_edit = input(f"What should todo #{edit_choice} be changed to? ").strip()
         my_list[edit_choice - 1] = new_edit
                     
-                   
+
+my_list = []                   
