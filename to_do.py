@@ -28,6 +28,9 @@ while True :
     print(" 3 Quit")
     print()
     print(" 4 Clear")
+    print()
+    print(" 5 Edit")
+    print("---------------------")
     #user input
     add_remove_clear = (input("What would you like to do?"))
     print()
@@ -49,3 +52,11 @@ while True :
     if add_remove_clear== '4':
             my_list = []
     count = 0
+
+
+    if add_remove_clear== '5':
+        edit_choice = int(input("Which # todo would you like to edit: "))
+        new_edit = input(f"What should todo #{edit_choice} be changed to? ").strip()
+        my_list[edit_choice - 1] = new_edit
+                    
+                   
