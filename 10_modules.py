@@ -91,6 +91,6 @@ if platform == 'MacOS':
     print("Your running on MacOS")
 
 if platform == "darwin":
-    print(" Your running on darwin")
+    print(" Your running on MacOS")
 else:
     print("unknown platform")
