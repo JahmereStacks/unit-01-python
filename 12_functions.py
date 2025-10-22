@@ -106,4 +106,4 @@ def total_calculator(price, quantity, discount=None):
     if discount is not None:
         total -= total * discount 
     return total
-print(total_calculator(25,2 ,0.10))
+print(total_calculator(100,2 ,0.10))
